@@ -14,6 +14,8 @@ interface AppContextType {
     setUser: (user: User | null) => void;
     isSeller: boolean;
     setIsSeller: (isSeller: boolean) => void;
+    showUserLogin: boolean;
+    setShowUserLogin: (showUserLogin: boolean) => void
 }
 
 type ProviderProps = {
@@ -26,13 +28,16 @@ export const AppContextProvider = ({ children }: ProviderProps) => {
     const navigate = useNavigate()
     const [user, setUser] = useState<User | null>(null)
     const [isSeller, setIsSeller] = useState<boolean>(false)
+    const [showUserLogin, setShowUserLogin] = useState<boolean>(false)
 
     const value: AppContextType = {
         navigate,
         user,
         setUser,
         isSeller,
-        setIsSeller
+        setIsSeller,
+        showUserLogin,
+        setShowUserLogin
     };
     return <AppContext.Provider value={value}>
         {children}
