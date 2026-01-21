@@ -12,3 +12,4 @@ Portfolio React Project: Grocery delivery app
 - Project structure initialized
 - AppContext provider scaffolded
 - Navbar implemented
+- Home page banner section completed
