@@ -14,3 +14,4 @@ Portfolio React Project: Grocery delivery app
 - Navbar implemented
 - Home page banner section completed
 - Home page categories section completed
+- Home page best seller section completed
