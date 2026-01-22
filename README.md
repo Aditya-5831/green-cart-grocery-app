@@ -7,6 +7,7 @@ Portfolio React Project: Grocery delivery app
 - Vite
 - React Router
 - Typescript
+- Prebuild UI
 
 ## Current Progress
 - Project structure initialized
